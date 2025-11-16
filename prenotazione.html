@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Tre Fratelli – Prenotazione</title>
+</head>
+<body>
+
+    <header class="cabecalho-trefratelli">
+        
+        <div class="logo-area">
+            <h1>Tre Fratelli</h1>
+            <p>CANTINA E RISTORANTE</p>
+        </div>
+        
+        <nav class="menu-navegacao">
+            <ul>
+                <li class="ativo"><a href="index.html"><strong>Principale</strong></a></li>
+                <li><a href="cantina.html"><strong>Cantina</strong></a></li>
+                <li><a href="ristorante.html"><strong>Ristorante</strong></a></li>
+                <li><a href="chisiamo.html"><strong>Chi Siamo</strong></a></li>
+                
+                <li class="cta-button"><a href="prenotazione.html">Prenotare Tavoli</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <div class="container reserva-form-container">
+        <h2>Prenota il tuo tavolo al Tre Fratelli</h2>
+        <p class="reserva-instrucao">Inserisci i dettagli della tua prenotazione. Dopo la conferma, riceverai un'email di notifica.</p>
+
+        <form action="/submit-reserva" method="POST" class="reserva-form">
+            
+            <div class="form-group-flex">
+                <div class="form-group">
+                    <label for="data-reserva">Data:</label>
+                    <input type="date" id="data-reserva" name="data" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hora-reserva">Tempo:</label>
+                    <input type="time" id="hora-reserva" name="hora" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pessoas">Nº di persone:</label>
+                    <input type="number" id="pessoas" name="pessoas" min="1" max="12" value="2" required>
+                </div>
+            </div>
+
+            <div class="form-group-full">
+                <label for="nome">Nome e cognome</label>
+                <input type="text" id="nome" name="nome" required placeholder="Tuo nome">
+            </div>
+
+            <div class="form-group-flex">
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="tuonome@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefono:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+                </div>
+            </div>
+
+            <div class="form-group-full">
+                <label for="observacoes">Note/restrizioni dietetiche (facoltative):</label>
+                <textarea id="observacoes" name="observacoes" rows="3" placeholder="Ex: Allergia al glutine, preferenza per un posto vicino al finestrino..."></textarea>
+            </div>
+            
+            <div class="form-group-full reserva-submit">
+                <button type="submit" class="cta-reserva-final">Conferma la prenotazione.</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
