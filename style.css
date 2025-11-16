@@ -63,3 +63,16 @@ body {
 .cta-button a:hover {
     background-color: #a82020; 
 }
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    background: #e5e5e5;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.flex {
+    display: flex;
+    gap: 40px;
+}
