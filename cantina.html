@@ -4,51 +4,129 @@
     <meta charset="UTF-8">
     <title>Tre Fratelli – Cantina</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="immagini/logo.png" type="image/png">
 </head>
-
 <body>
 
     <header class="cabecalho-trefratelli">
         
         <div class="logo-area">
-            <h1>Tre Fratelli</h1>
-            <p>CANTINA E RISTORANTE</p>
+            <img src="immagini/vinologo.png" alt="Logo Tre Fratelli">
+            <div class="logo-textos">
+                <h1>Tre Fratelli</h1>
+                <p>CANTINA E RISTORANTE</p>
+            </div>
         </div>
+
+        <div class="menu-toggle" id="menu-toggle">☰</div>
         
-        <nav class="menu-navegacao">
+        <nav class="menu-navegacao" id="menu">
             <ul>
                 <li><a href="index.html"><strong>Principale</strong></a></li>
                 <li class="ativo"><a href="cantina.html"><strong>Cantina</strong></a></li>
                 <li><a href="ristorante.html"><strong>Ristorante</strong></a></li>
                 <li><a href="chisiamo.html"><strong>Chi Siamo</strong></a></li>
-                    
                 <li class="cta-button"><a href="prenotazione.html">Prenotare Tavoli</a></li>
             </ul>
         </nav>
-        
     </header>
 
+    <section class="hero">
+        <img src="immagini/bottiglie.png" alt="Imagem do restaurante">
+        <div class="hero-texto">
+            <h1>Cantina.</h1>
+            <p>La nostra collezione di vini esclusivi</p>
+        </div>
+    </section><br>
 
-    <div class="container">
-        <div class="flex">
+    <section class="sezione-sul-ristorante">
+        <div class="contenuto-sul-ristorante">
 
-            <div class="sidebar">
-                <ul>
-                    <li>placeholder</li>
-                    <li>placeholder</li>
-                </ul>
+            <div class="immagine-sul-ristorante">
+                <img src="immagini/facciata.png" alt="Facciata Tre Fratelli">
             </div>
 
-            <div class="texto">
-                <p>placeholder</p>
-            </div>
-
-            <div class="imagem-box">
-                placeholder
+            <div class="testo-sul-ristorante">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim luctus erat nec 
+                    placerat. Donec rutrum finibus lectus ut consectetur. Sed sodales neque ut justo sollicitudin 
+                    condimentum. Nunc sit amet augue eu nibh ullamcorper posuere. Donec congue, dui et fringilla 
+                    malesuada, nisi tellus vulputate ligula, ut mattis elit metus egestas erat. Integer nibh quam, 
+                    
+                </p>
+                <p>
+                    placerat ut eros quis, ornare aliquam velit. Etiam mollis dolor in elit pretium, pulvinar ornare 
+                    dolor vehicula. Donec finibus libero ut euismod tincidunt. In non ultrices lorem. Donec vel sapien a 
+                    odio rhoncus tincidunt. Nullam posuere orci a pulvinar blandit. In non sollicitudin lorem. Vivamus 
+                    auctor blandit ligula eu porttitor. Suspendisse at lacus non sapien efficitur porta quis sit amet magna.
+                </p>
+                
             </div>
 
         </div>
-    </div>
+    </section><br><br>
+
+    <section class="sezione-sul-ristorante invertita">
+        <div class="contenuto-sul-ristorante">
+
+            <div class="testo-sul-ristorante">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim luctus erat nec 
+                    placerat. Donec rutrum finibus lectus ut consectetur. Sed sodales neque ut justo sollicitudin 
+                    condimentum. Nunc sit amet augue eu nibh ullamcorper posuere. Donec congue, dui et fringilla 
+                    malesuada, nisi tellus vulputate ligula, ut mattis elit metus egestas erat. Integer nibh quam, 
+                    
+                </p>
+                <p>
+                    placerat ut eros quis, ornare aliquam velit. Etiam mollis dolor in elit pretium, pulvinar ornare 
+                    dolor vehicula. Donec finibus libero ut euismod tincidunt. In non ultrices lorem. Donec vel sapien a 
+                    odio rhoncus tincidunt. Nullam posuere orci a pulvinar blandit. In non sollicitudin lorem. Vivamus 
+                    auctor blandit ligula eu porttitor. Suspendisse at lacus non sapien efficitur porta quis sit amet magna.
+                </p>
+                
+            </div>
+
+            <div class="immagine-sul-ristorante">
+                <img src="immagini/cantina.png" alt="Immagine del ristorante">
+            </div>
+
+        </div>
+    </section><br><br>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="colonna">
+                <h3>TreFratelli</h3>
+                <p>Via S. Stefano, 55 — 28087 Tirano (SO), Italia</p>
+                <p>+39 000 000 000</p>
+            </div>
+
+            <div class="colonna">
+                <h3>MAGGIORI INFORMAZIONI</h3>
+                <p>Email: info@trefratelli.example</p>
+                <p>Contati: info@trefratelli.example</p>
+                <p>Telefono: +39 000 000 000</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Cantina e Ristorante Tre Fratelli · Sito dimostrativo non commerciale.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.querySelector(".menu-navegacao ul");
+
+        toggle.addEventListener("click", () => {
+            menu.classList.toggle("ativo");
+        });
+    </script>
 
 </body>
 </html>
