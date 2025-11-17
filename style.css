@@ -10,6 +10,7 @@ body {
     background: #fffef3;
 }
 
+/*NAVIGAZIONE*/
 .menu-navegacao ul {
     list-style: none;
     display: flex;
@@ -64,30 +65,6 @@ body {
 .cta-button a:hover {
     background-color: #a82020;
     color: #ffffff !important;
-}
-
-.container {
-    width: 80%;
-    margin: 40px auto;
-    background: #e5e5e5;
-    padding: 30px;
-    border-radius: 20px;
-}
-
-.flex {
-    display: flex;
-    gap: 40px;
-}
-
-.sidebar {
-    width: 200px;
-    padding: 20px;
-    background: #d6d6d6;
-    border-radius: 20px;
-}
-
-.texto {
-    flex: 1;
 }
 
 .cabecalho-trefratelli {
@@ -185,7 +162,32 @@ body {
     }
 }
 
+/*CONTAINERS*/
+.container {
+    width: 80%;
+    margin: 40px auto;
+    background: #e5e5e5;
+    padding: 30px;
+    border-radius: 20px;
+}
 
+.flex {
+    display: flex;
+    gap: 40px;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 20px;
+    background: #d6d6d6;
+    border-radius: 20px;
+}
+
+.texto {
+    flex: 1;
+}
+
+/*IMMAGINE INIZIALE*/
 .hero {
     position: relative;
     width: 100%;
@@ -222,7 +224,7 @@ body {
 }
 
 
-
+/*SEZIONI DI TESTO*/
 .sezione-sul-ristorante {
     width: 100%;
     padding: 0;
@@ -280,7 +282,7 @@ body {
     }
 }
 
-
+/*FOOTER*/
 .footer {
     background-color: #f3f2ea;
     padding: 60px 80px;
