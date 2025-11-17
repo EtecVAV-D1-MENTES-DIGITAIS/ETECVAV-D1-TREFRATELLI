@@ -25,7 +25,7 @@
             </ul>
         </nav>
         
-    </header>
+    </header><br><br><br>
 
     <div class="container reserva-form-container">
         <h2>Prenota il tuo tavolo al Tre Fratelli</h2>
@@ -67,7 +67,7 @@
             </div>
 
             <div class="form-group-full">
-                <label for="observacoes">Note/restrizioni dietetiche (facoltative):</label>
+                <label for="observacoes">Note/restrizioni dietetiche (facoltative):</label><br>
                 <textarea id="observacoes" name="observacoes" rows="3" placeholder="Ex: Allergia al glutine, preferenza per un posto vicino al finestrino..."></textarea>
             </div>
             
@@ -75,7 +75,41 @@
                 <button type="submit" class="cta-reserva-final">Conferma la prenotazione.</button>
             </div>
         </form>
-
     </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="colonna">
+                <h3>TreFratelli</h3>
+                <p>Via S. Stefano, 55 — 28087 Tirano (SO), Italia</p>
+                <p>+39 000 000 000</p>
+            </div>
+
+            <div class="colonna">
+                <h3>MAGGIORI INFORMAZIONI</h3>
+                <p>Email: info@trefratelli.example</p>
+                <p>Contati: info@trefratelli.example</p>
+                <p>Telefono: +39 000 000 000</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Cantina e Ristorante Tre Fratelli · Sito dimostrativo non commerciale.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.querySelector(".menu-navegacao ul");
+
+        toggle.addEventListener("click", () => {
+            menu.classList.toggle("ativo");
+        });
+    </script>
+
+
 </body>
 </html>
