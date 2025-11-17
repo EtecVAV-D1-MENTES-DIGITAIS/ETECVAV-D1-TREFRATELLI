@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #ffffff;
+    background: #fffef3;
 }
 
 .menu-navegacao ul {
@@ -91,12 +91,19 @@ body {
 }
 
 .cabecalho-trefratelli {
+    backdrop-filter: blur(8px);
+    background-color: rgba(245, 240, 232, 0.85);
     display: flex;
     justify-content: space-between; 
     align-items: center; 
     padding: 20px 40px; 
-    background-color: #fcf4ec; 
-    border-bottom: 1px solid #e7d8c5; 
+    background-color: #fffef3; 
+    border-bottom: 1px solid #e7d8c5;
+    position: fixed;     
+    top: 0;             
+    left: 0;
+    width: 100%;         
+    z-index: 999; 
 }
 
 .logo-area h1 {
@@ -117,25 +124,99 @@ body {
 
 .logo-area {
     display: flex;
-    align-items: center; /* imagem alinhada com o conjunto de textos */
-    gap: 12px; /* espaço entre imagem e texto */
+    align-items: center; 
+    gap: 12px; 
 }
 
-/* Tamanho da imagem: fica com a altura total dos textos */
 .logo-area img {
-    height: 100%;     /* acompanha o tamanho vertical da área do texto */
-    max-height: 65px; /* ajuste aqui conforme o visual desejado */
+    height: 100%;     
+    max-height: 65px; 
     width: auto;
 }
 
-/* Deixa os textos juntos como um bloco */
 .logo-textos h1 {
     margin: 0;
-    font-size: 28px;  /* ajuste como preferir */
+    font-size: 28px;  
 }
 
 .logo-textos p {
     margin: 0;
     font-size: 14px;
     letter-spacing: 1px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: #8c3b28;
+}
+
+@media (max-width: 768px) {
+
+    .menu-navegacao ul {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 90px; 
+        right: 20px;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        width: 200px;
+        gap: 15px;
+    }
+
+    .menu-navegacao ul.ativo {
+        display: flex;
+    }
+
+    .cabecalho-trefratelli {
+        padding: 15px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-navegacao {
+        position: relative;
+    }
+}
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh; 
+    overflow: hidden;
+     margin-top: 105px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.hero-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 0px 3px 10px rgba(0,0,0,0.7);
+}
+
+.hero-texto h1 {
+    font-size: 4rem; 
+    margin: 0;
+}
+
+.hero-texto p {
+    font-size: 1.5rem;
+    margin-top: 10px;
 }
