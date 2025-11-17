@@ -262,7 +262,8 @@ body {
 }
 
 .testo-sul-ristorante p {
-    font-size: 1rem;
+    font-size: 1.4rem;
+    text-align: justify;
     color: #5d4d42;
     line-height: 1.7;
     margin-bottom: 14px;
@@ -278,3 +279,4 @@ body {
         text-align: center;
     }
 }
+
