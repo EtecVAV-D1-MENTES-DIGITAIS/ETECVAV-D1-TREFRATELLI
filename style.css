@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #fffef3;
+    background: #fafafa;
 }
 
 /*NAVIGAZIONE*/
@@ -45,7 +45,7 @@ body {
     left: 0;
     width: 100%;
     height: 3px;
-    background-color: #c9b48c; 
+    background-color: #862727; 
 }
 
 .cta-button a {
@@ -69,12 +69,12 @@ body {
 
 .cabecalho-trefratelli {
     backdrop-filter: blur(8px);
-    background-color: rgba(245, 240, 232, 0.85);
+    background-color: #fafafa;
     display: flex;
     justify-content: space-between; 
     align-items: center; 
     padding: 20px 40px; 
-    background-color: #fffef3; 
+    background-color: #fafafa; 
     border-bottom: 1px solid #e7d8c5;
     position: fixed;     
     top: 0;             
@@ -228,7 +228,7 @@ body {
 .sezione-sul-ristorante {
     width: 100%;
     padding: 0;
-    background: #fffef3;
+    background: #fafafa;
 }
 
 .contenuto-sul-ristorante {
