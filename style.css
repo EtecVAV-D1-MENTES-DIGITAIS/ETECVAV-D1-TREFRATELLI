@@ -114,3 +114,28 @@ body {
     color: #8c3b28;
     margin: -5px 0 0 0; 
 }
+
+.logo-area {
+    display: flex;
+    align-items: center; /* imagem alinhada com o conjunto de textos */
+    gap: 12px; /* espaço entre imagem e texto */
+}
+
+/* Tamanho da imagem: fica com a altura total dos textos */
+.logo-area img {
+    height: 100%;     /* acompanha o tamanho vertical da área do texto */
+    max-height: 65px; /* ajuste aqui conforme o visual desejado */
+    width: auto;
+}
+
+/* Deixa os textos juntos como um bloco */
+.logo-textos h1 {
+    margin: 0;
+    font-size: 28px;  /* ajuste como preferir */
+}
+
+.logo-textos p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
