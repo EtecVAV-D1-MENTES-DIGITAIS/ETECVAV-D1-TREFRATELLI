@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Georgia", serif;
+    font-family: "Lora", serif;
 }
 
 body {
@@ -57,11 +58,12 @@ body {
 
 .cta-button::after,
 .cta-button:hover::after {
-    content: none;
+    content: none !important;
 }
 
 .cta-button a:hover {
-    background-color: #a82020; 
+    background-color: #a82020;
+    color: #ffffff !important;
 }
 
 .container {
