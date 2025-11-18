@@ -10,23 +10,24 @@
     <header class="cabecalho-trefratelli">
         
         <div class="logo-area">
-            <h1 data-it="Tre Fratelli" data-en="Tre Fratelli">Tre Fratelli</h1>
-            <p data-it="CANTINA E RISTORANTE" data-en="WINERY & RESTAURANT">CANTINA E RISTORANTE</p>
+            <img src="../immagini/vinologo.png" alt="Logo Tre Fratelli" data-it-alt="Logo Tre Fratelli" data-en-alt="Tre Fratelli Logo">
+            <div class="logo-textos">
+                <h1 data-it="Tre Fratelli" data-en="Tre Fratelli">Tre Fratelli</h1>
+                <p data-it="CANTINA E RISTORANTE" data-en="WINERY & RESTAURANT">CANTINA E RISTORANTE</p>
+            </div>
         </div>
-        
-        <nav class="menu-navegacao">
-            <ul>
-                <li><a href="index.html" data-it="Principale" data-en="Home"><strong>Principale</strong></a></li>
-                <li><a href="cantina.html" data-it="Cantina" data-en="Winery"><strong>Cantina</strong></a></li>
-                <li><a href="ristorante.html" data-it="Ristorante" data-en="Restaurant"><strong>Ristorante</strong></a></li>
-                <li><a href="chisiamo.html" data-it="Chi Siamo" data-en="About Us"><strong>Chi Siamo</strong></a></li>
-                
-                <li class="cta-button">
-                    <a href="prenotazione.html" data-it="Prenotare Tavoli" data-en="Reserve Tables">
-                        Prenotare Tavoli
-                    </a>
-                </li>
 
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+        
+        <nav class="menu-navegacao" id="menu">
+            <ul>
+                <li><a href="index.html" data-it-html="<strong>Principale</strong>" data-en-html="<strong>Home</strong>"><strong>Principale</strong></a></li>
+                <li><a href="cantina.html" data-it-html="<strong>Cantina</strong>" data-en-html="<strong>Winery</strong>"><strong>Cantina</strong></a></li>
+                <li><a href="ristorante.html" data-it-html="<strong>Ristorante</strong>" data-en-html="<strong>Restaurant</strong>"><strong>Ristorante</strong></a></li>
+                <li><a href="chisiamo.html" data-it-html="<strong>Chi Siamo</strong>" data-en-html="<strong>About Us</strong>"><strong>Chi Siamo</strong></a></li>
+                <li class="cta-button"><a href="prenotazione.html" data-it="Prenotare Tavoli" data-en="Book a Table">Prenotare Tavoli</a></li>
+
+                
                 <li class="dropdown-idioma" aria-haspopup="true" aria-expanded="false">
                     <button class="dropdown-btn" aria-controls="dropdown-idioma-menu" aria-haspopup="true" type="button" data-it="Idioma ▼" data-en="Language ▼">Idioma ▼</button>
                     <div class="dropdown-conteudo" id="dropdown-idioma-menu" role="menu" aria-hidden="true">
@@ -36,8 +37,7 @@
                 </li>
             </ul>
         </nav>
-        
-    </header><br><br><br>
+    </header><br><br><br><br>
 
     <div class="container reserva-form-container">
         <h2 data-it="Prenota il tuo tavolo al Tre Fratelli" 
