@@ -464,3 +464,54 @@ body {
     color: #777;
     margin-top: 5px;
 }
+
+/*traduzione*/
+.dropdown-idioma {
+            position: relative;
+            display: inline-block;
+            margin-left: 18px;
+            align-self: center;
+        }
+        .dropdown-idioma .dropdown-btn {
+            background: none;
+            border: none;
+            font: inherit;
+            cursor: pointer;
+            padding: 6px 8px;
+            color: inherit;
+        }
+        .dropdown-idioma .dropdown-conteudo {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: #fff;
+            min-width: 140px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+            border-radius: 6px;
+            display: none;
+            z-index: 1000;
+            overflow: hidden;
+        }
+        .dropdown-idioma .dropdown-conteudo .idioma {
+            padding: 10px 14px;
+            margin: 0;
+            cursor: pointer;
+            font-size: 14px;
+            color: #333;
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+        }
+        .dropdown-idioma .dropdown-conteudo .idioma:last-child {
+            border-bottom: none;
+        }
+        .dropdown-idioma .dropdown-conteudo .idioma:hover {
+            background: rgba(0,0,0,0.04);
+        }
+
+        @media (max-width: 768px) {
+            .dropdown-idioma {
+                margin-left: 0;
+            }
+            .dropdown-idioma .dropdown-conteudo {
+                right: 10px;
+            }
+        }
