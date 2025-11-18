@@ -2,19 +2,20 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Tre Fratelli – Chi Siamo</title>
+    <title data-it="Tre Fratelli – Chi Siamo" data-en="Tre Fratelli – About Us">Tre Fratelli – Chi Siamo</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../immagini/logo.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
     <header class="cabecalho-trefratelli">
         
         <div class="logo-area">
-            <img src="../immagini/vinologo.png" alt="Logo Tre Fratelli">
+            <img src="../immagini/vinologo.png" alt="Logo Tre Fratelli" data-it-alt="Logo Tre Fratelli" data-en-alt="Tre Fratelli Logo">
             <div class="logo-textos">
-                <h1>Tre Fratelli</h1>
-                <p>CANTINA E RISTORANTE</p>
+                <h1 data-it="Tre Fratelli" data-en="Tre Fratelli">Tre Fratelli</h1>
+                <p data-it="CANTINA E RISTORANTE" data-en="WINERY & RESTAURANT">CANTINA E RISTORANTE</p>
             </div>
         </div>
 
@@ -22,20 +23,28 @@
         
         <nav class="menu-navegacao" id="menu">
             <ul>
-                <li><a href="index.html"><strong>Principale</strong></a></li>
-                <li><a href="cantina.html"><strong>Cantina</strong></a></li>
-                <li><a href="ristorante.html"><strong>Ristorante</strong></a></li>
-                <li class="ativo"><a href="chisiamo.html"><strong>Chi Siamo</strong></a></li>
-                <li class="cta-button"><a href="prenotazione.html">Prenotare Tavoli</a></li>
+                <li><a href="index.html" data-it-html="<strong>Principale</strong>" data-en-html="<strong>Home</strong>"><strong>Principale</strong></a></li>
+                <li><a href="cantina.html" data-it-html="<strong>Cantina</strong>" data-en-html="<strong>Winery</strong>"><strong>Cantina</strong></a></li>
+                <li><a href="ristorante.html" data-it-html="<strong>Ristorante</strong>" data-en-html="<strong>Restaurant</strong>"><strong>Ristorante</strong></a></li>
+                <li class="ativo"><a href="chisiamo.html" data-it-html="<strong>Chi Siamo</strong>" data-en-html="<strong>About Us</strong>"><strong>Chi Siamo</strong></a></li>
+                <li class="cta-button"><a href="prenotazione.html" data-it="Prenotare Tavoli" data-en="Book a Table">Prenotare Tavoli</a></li>
+
+                <li class="dropdown-idioma" aria-haspopup="true" aria-expanded="false">
+                    <button class="dropdown-btn" aria-controls="dropdown-idioma-menu" aria-haspopup="true" type="button" data-it="Idioma ▼" data-en="Language ▼">Idioma ▼</button>
+                    <div class="dropdown-conteudo" id="dropdown-idioma-menu" role="menu" aria-hidden="true">
+                        <p class="idioma" data-lang="it" role="menuitem">Italiano</p>
+                        <p class="idioma" data-lang="en" role="menuitem">English</p>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <img src="../immagini/alp.png" alt="Imagem do restaurante">
+        <img src="../immagini/alp.png" alt="Imagem do restaurante" data-it-alt="Immagine del ristorante" data-en-alt="Restaurant image">
         <div class="hero-texto">
-            <h1>Chi siamo.</h1>
-            <p>Le nostre origini e tradizioni.</p>
+            <h1 data-it="Chi siamo." data-en="About us.">Chi siamo.</h1>
+            <p data-it="Le nostre origini e tradizioni." data-en="Our origins and traditions.">Le nostre origini e tradizioni.</p>
         </div>
     </section><br>
 
@@ -43,20 +52,26 @@
         <div class="contenuto-sul-ristorante">
 
             <div class="immagine-sul-ristorante">
-                <img src="../immagini/proprieta.png" alt="Facciata Tre Fratelli">
+                <img src="../immagini/proprieta.png" alt="Facciata Tre Fratelli" data-it-alt="Facciata Tre Fratelli" data-en-alt="Tre Fratelli facade">
             </div>
 
             <div class="testo-sul-ristorante">
-                <h2>Origine del ristorante.</h2>
-                <p>
+                <h2 data-it="Origine del ristorante." data-en="Origin of the restaurant.">Origine del ristorante.</h2>
+                <p data-it="Il Tre Fratelli nasce da una storia familiare che attraversa generazioni, segnata dal lavoro, 
+                    dalla resilienza e da un profondo legame con la terra. Fondata nel 1925, la cantina e il 
+                    ristorante sorsero grazie alla forza e alla visione di Teresa Marinetti, la matriarca che 
+                    trasformò una semplice cucina rurale in un punto di incontro per viaggiatori, abitanti del luogo 
+                    e amanti della buona tavola."
+                   data-en="Tre Fratelli was born from a family story spanning generations, marked by hard work, resilience and a deep bond with the land. Founded in 1925, the winery and restaurant arose thanks to the strength and vision of Teresa Marinetti, the matriarch who turned a simple rural kitchen into a meeting place for travellers, locals and lovers of good food.">
                     Il Tre Fratelli nasce da una storia familiare che attraversa generazioni, segnata dal lavoro, 
                     dalla resilienza e da un profondo legame con la terra. Fondata nel 1925, la cantina e il 
                     ristorante sorsero grazie alla forza e alla visione di Teresa Marinetti, la matriarca che 
                     trasformò una semplice cucina rurale in un punto di incontro per viaggiatori, abitanti del luogo 
                     e amanti della buona tavola. 
-                    
                 </p>
-                <p>
+                <p data-it="Il profumo della sua pasta artigianale, sempre preparata con mani ferme e sguardo sereno, 
+                    divenne simbolo di accoglienza e semplicità — valori che hanno definito il destino della famiglia."
+                   data-en="The scent of her handmade pasta, always prepared with steady hands and a calm gaze, became a symbol of hospitality and simplicity — values that have shaped the family's destiny.">
                     Il profumo della sua pasta artigianale, sempre preparata con mani ferme e sguardo sereno, 
                     divenne simbolo di accoglienza e semplicità — valori che hanno definito il destino della famiglia.
                 </p>
@@ -70,14 +85,22 @@
         <div class="contenuto-sul-ristorante">
 
             <div class="testo-sul-ristorante">
-                <h2>Il ristorante attualmente.</h2>
-                <p>
+                <h2 data-it="Il ristorante attualmente." data-en="The restaurant today.">Il ristorante attualmente.</h2>
+                <p data-it="Oggi, il Tre Fratelli è molto più di un’attività: è un patrimonio emotivo. La cantina 
+                    continua ad essere curata con lo stesso rispetto che ha sempre guidato chi ha lavorato 
+                    su questa terra, con vigne antiche preservate con attenzione e metodi che uniscono 
+                    tradizione e innovazione."
+                   data-en="Today, Tre Fratelli is much more than a business: it is an emotional heritage. The cellar continues to be cared for with the same respect that has always guided those working this land, with ancient vineyards preserved with care and methods that combine tradition and innovation.">
                     Oggi, il Tre Fratelli è molto più di un’attività: è un patrimonio emotivo. La cantina 
                     continua ad essere curata con lo stesso rispetto che ha sempre guidato chi ha lavorato 
                     su questa terra, con vigne antiche preservate con attenzione e metodi che uniscono 
                     tradizione e innovazione.
                 </p>
-                <p>
+                <p data-it="Il Tre Fratelli esiste per preservare memorie, nutrire tradizioni e creare esperienze che 
+                    uniscono passato e presente. Qui, il cibo non è solo nutrimento: è eredità. Il vino non è 
+                    solo bevanda: è cultura. E ogni visitatore non è soltanto un cliente: è parte di una storia 
+                    centenaria che continua a vivere, rinnovata ogni giorno, un bicchiere e un piatto di pasta alla volta."
+                   data-en="Tre Fratelli exists to preserve memories, nurture traditions and create experiences that bring together past and present. Here, food is not just nourishment: it is inheritance. Wine is not just a drink: it is culture. And every visitor is not merely a customer: they are part of a centenary story that continues to live, renewed each day, one glass and one plate of pasta at a time.">
                     Il Tre Fratelli esiste per preservare memorie, nutrire tradizioni e creare esperienze che 
                     uniscono passato e presente. Qui, il cibo non è solo nutrimento: è eredità. Il vino non è 
                     solo bevanda: è cultura. E ogni visitatore non è soltanto un cliente: è parte di una storia 
@@ -87,7 +110,7 @@
             </div>
 
             <div class="immagine-sul-ristorante">
-                <img src="../immagini/facciata.png" alt="Immagine del ristorante">
+                <img src="../immagini/facciata.png" alt="Immagine del ristorante" data-it-alt="Immagine del ristorante" data-en-alt="Image of the restaurant">
             </div>
 
         </div>
@@ -97,22 +120,22 @@
         <div class="footer-container">
 
             <div class="colonna">
-                <h3>TreFratelli</h3>
-                <p>Via S. Stefano, 55 — 28087 Tirano (SO), Italia</p>
-                <p>+39 000 000 000</p>
+                <h3 data-it="TreFratelli" data-en="TreFratelli">TreFratelli</h3>
+                <p data-it="Via S. Stefano, 55 — 28087 Tirano (SO), Italia" data-en="Via S. Stefano, 55 — 28087 Tirano (SO), Italy">Via S. Stefano, 55 — 28087 Tirano (SO), Italia</p>
+                <p data-it="+39 000 000 000" data-en="+39 000 000 000">+39 000 000 000</p>
             </div>
 
             <div class="colonna">
-                <h3>MAGGIORI INFORMAZIONI</h3>
-                <p>Email: info@trefratelli.example</p>
-                <p>Contati: info@trefratelli.example</p>
-                <p>Telefono: +39 000 000 000</p>
+                <h3 data-it="MAGGIORI INFORMAZIONI" data-en="MORE INFORMATION">MAGGIORI INFORMAZIONI</h3>
+                <p data-it="Email: info@trefratelli.example" data-en="Email: info@trefratelli.example">Email: info@trefratelli.example</p>
+                <p data-it="Contati: info@trefratelli.example" data-en="Contact: info@trefratelli.example">Contati: info@trefratelli.example</p>
+                <p data-it="Telefono: +39 000 000 000" data-en="Phone: +39 000 000 000">Telefono: +39 000 000 000</p>
             </div>
 
         </div>
 
         <div class="footer-bottom">
-            <p>© 2025 Cantina e Ristorante Tre Fratelli · Sito dimostrativo non commerciale.</p>
+            <p data-it="© 2025 Cantina e Ristorante Tre Fratelli · Sito dimostrativo non commerciale." data-en="© 2025 Cantina e Ristorante Tre Fratelli · Demonstrative non-commercial site.">© 2025 Cantina e Ristorante Tre Fratelli · Sito dimostrativo non commerciale.</p>
         </div>
     </footer>
 
@@ -121,9 +144,92 @@
         const toggle = document.getElementById("menu-toggle");
         const menu = document.querySelector(".menu-navegacao ul");
 
-        toggle.addEventListener("click", () => {
-            menu.classList.toggle("ativo");
-        });
+        if (toggle && menu) {
+            toggle.addEventListener("click", () => {
+                menu.classList.toggle("ativo");
+            });
+        }
+
+        (function() {
+            const dropdown = document.querySelector('.dropdown-idioma');
+            const btn = dropdown ? dropdown.querySelector('.dropdown-btn') : null;
+            const conteudo = dropdown ? dropdown.querySelector('.dropdown-conteudo') : null;
+
+            if (!dropdown || !btn || !conteudo) return;
+
+            btn.addEventListener('click', (e) => {
+                const isOpen = conteudo.style.display === 'block';
+                closeAllLanguageDropdowns();
+                if (!isOpen) {
+                    conteudo.style.display = 'block';
+                    dropdown.setAttribute('aria-expanded', 'true');
+                    conteudo.setAttribute('aria-hidden', 'false');
+                }
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!dropdown.contains(e.target)) {
+                    closeAllLanguageDropdowns();
+                }
+            });
+
+            function closeAllLanguageDropdowns() {
+                document.querySelectorAll('.dropdown-conteudo').forEach(el => {
+                    el.style.display = 'none';
+                    el.parentElement && el.parentElement.setAttribute('aria-expanded', 'false');
+                    el.setAttribute('aria-hidden', 'true');
+                });
+            }
+
+            document.querySelectorAll('.dropdown-idioma .idioma').forEach(item => {
+                item.addEventListener('click', () => {
+                    const lang = item.getAttribute('data-lang') || 'it';
+                    setLanguage(lang);
+                    closeAllLanguageDropdowns();
+                });
+            });
+        })();
+
+        function setLanguage(lang) {
+            try { document.documentElement.lang = (lang === 'it') ? 'it' : 'en'; } catch(e) {}
+
+            const titleEl = document.querySelector('title');
+            if (titleEl && titleEl.getAttribute('data-' + lang)) {
+                titleEl.textContent = titleEl.getAttribute('data-' + lang);
+            }
+
+            const all = document.querySelectorAll('[data-it], [data-en], [data-it-html], [data-en-html]');
+            all.forEach(el => {
+                const attrHtml = el.getAttribute('data-' + lang + '-html');
+                if (attrHtml !== null) {
+                    el.innerHTML = attrHtml;
+                    return;
+                }
+
+                const attrText = el.getAttribute('data-' + lang);
+                if (attrText !== null) {
+                    el.textContent = attrText;
+                    return;
+                }
+
+            });
+
+            document.querySelectorAll('img[data-it-alt], img[data-en-alt]').forEach(img => {
+                const alt = img.getAttribute('data-' + lang + '-alt');
+                if (alt !== null) img.alt = alt;
+            });
+
+            try { localStorage.setItem('trefratelli_lang', lang); } catch(e) {}
+        }
+
+        (function() {
+            let saved = null;
+            try { saved = localStorage.getItem('trefratelli_lang'); } catch(e) { saved = null; }
+            if (saved === 'en' || saved === 'it') {
+                setLanguage(saved);
+            }
+        })();
+
     </script>
 
 </body>
