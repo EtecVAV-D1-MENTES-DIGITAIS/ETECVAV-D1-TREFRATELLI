@@ -2,19 +2,20 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Tre Fratelli – Cantina</title>
+    <title data-it="Tre Fratelli – Cantina" data-en="Tre Fratelli – Wine Cellar">Tre Fratelli – Cantina</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../immagini/logo.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
     <header class="cabecalho-trefratelli">
         
         <div class="logo-area">
-            <img src="../immagini/vinologo.png" alt="Logo Tre Fratelli">
+            <img src="../immagini/vinologo.png" alt="Logo Tre Fratelli" data-it-alt="Logo Tre Fratelli" data-en-alt="Tre Fratelli Logo">
             <div class="logo-textos">
-                <h1>Tre Fratelli</h1>
-                <p>CANTINA E RISTORANTE</p>
+                <h1 data-it="Tre Fratelli" data-en="Tre Fratelli">Tre Fratelli</h1>
+                <p data-it="CANTINA E RISTORANTE" data-en="WINERY & RESTAURANT">CANTINA E RISTORANTE</p>
             </div>
         </div>
 
@@ -22,47 +23,55 @@
         
         <nav class="menu-navegacao" id="menu">
             <ul>
-                <li><a href="index.html"><strong>Principale</strong></a></li>
-                <li class="ativo"><a href="cantina.html"><strong>Cantina</strong></a></li>
-                <li><a href="ristorante.html"><strong>Ristorante</strong></a></li>
-                <li><a href="chisiamo.html"><strong>Chi Siamo</strong></a></li>
-                <li class="cta-button"><a href="prenotazione.html">Prenotare Tavoli</a></li>
+                <li><a href="index.html" data-it-html="<strong>Principale</strong>" data-en-html="<strong>Home</strong>"><strong>Principale</strong></a></li>
+                <li class="ativo"><a href="cantina.html" data-it-html="<strong>Cantina</strong>" data-en-html="<strong>Winery</strong>"><strong>Cantina</strong></a></li>
+                <li><a href="ristorante.html" data-it-html="<strong>Ristorante</strong>" data-en-html="<strong>Restaurant</strong>"><strong>Ristorante</strong></a></li>
+                <li><a href="chisiamo.html" data-it-html="<strong>Chi Siamo</strong>" data-en-html="<strong>About Us</strong>"><strong>Chi Siamo</strong></a></li>
+                <li class="cta-button"><a href="prenotazione.html" data-it="Prenotare Tavoli" data-en="Book a Table">Prenotare Tavoli</a></li>
+
+                <li class="dropdown-idioma" aria-haspopup="true" aria-expanded="false">
+                    <button class="dropdown-btn" aria-controls="dropdown-idioma-menu" aria-haspopup="true" type="button" data-it="Idioma ▼" data-en="Language ▼">Idioma ▼</button>
+                    <div class="dropdown-conteudo" id="dropdown-idioma-menu" role="menu" aria-hidden="true">
+                        <p class="idioma" data-lang="it" role="menuitem">Italiano</p>
+                        <p class="idioma" data-lang="en" role="menuitem">English</p>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <img src="../immagini/bottiglie.png" alt="Imagem do restaurante">
+        <img src="../immagini/bottiglie.png" alt="Imagem do restaurante" data-it-alt="Immagine del ristorante" data-en-alt="Restaurant image">
         <div class="hero-texto">
-            <h1>Cantina.</h1>
-            <p>La nostra collezione di vini esclusivi.</p>
+            <h1 data-it="Cantina." data-en="Wine Cellar.">Cantina.</h1>
+            <p data-it="La nostra collezione di vini esclusivi." data-en="Our collection of exclusive wines.">La nostra collezione di vini esclusivi.</p>
         </div>
     </section><br>
 
     <section class="sezione-vini">
-        <h2 class="titolo-vini">Ecco le nostre etichette esclusive:</h2>
+        <h2 class="titolo-vini" data-it="Ecco le nostre etichette esclusive:" data-en="Here are our exclusive labels:">Ecco le nostre etichette esclusive:</h2>
 
         <div class="lista-vini">
 
             <div class="card-vino">
-                <img src="../immagini/vino1.png" alt="Vino 1">
-                <h3 class="nome-vino">Valpolicella Tre Fratelli</h3>
-                <p class="origine-vino">2019</p>
-                <p class="info-vino">Rosso agile e conviviale.</p>
+                <img src="../immagini/vino1.png" alt="Vino 1" data-it-alt="Vino 1" data-en-alt="Wine 1">
+                <h3 class="nome-vino" data-it="Valpolicella Tre Fratelli" data-en="Valpolicella Tre Fratelli">Valpolicella Tre Fratelli</h3>
+                <p class="origine-vino" data-it="2019" data-en="2019">2019</p>
+                <p class="info-vino" data-it="Rosso agile e conviviale." data-en="Agile, sociable red.">Rosso agile e conviviale.</p>
             </div>
 
             <div class="card-vino">
-                <img src="../immagini/vino2.png" alt="Vino 2">
-                <h3 class="nome-vino">Tre Chardonnay</h3>
-                <p class="origine-vino">2022</p>
-                <p class="info-vino">Bianco fresco.</p>
+                <img src="../immagini/vino2.png" alt="Vino 2" data-it-alt="Vino 2" data-en-alt="Wine 2">
+                <h3 class="nome-vino" data-it="Tre Chardonnay" data-en="Tre Chardonnay">Tre Chardonnay</h3>
+                <p class="origine-vino" data-it="2022" data-en="2022">2022</p>
+                <p class="info-vino" data-it="Bianco fresco." data-en="Fresh white.">Bianco fresco.</p>
             </div>
 
             <div class="card-vino">
-                <img src="../immagini/vino3.png" alt="Vino 3">
-                <h3 class="nome-vino">Merlot Tre Fratelli</h3>
-                <p class="origine-vino">2020</p>
-                <p class="info-vino">Frutto maturo.</p>
+                <img src="../immagini/vino3.png" alt="Vino 3" data-it-alt="Vino 3" data-en-alt="Wine 3">
+                <h3 class="nome-vino" data-it="Merlot Tre Fratelli" data-en="Merlot Tre Fratelli">Merlot Tre Fratelli</h3>
+                <p class="origine-vino" data-it="2020" data-en="2020">2020</p>
+                <p class="info-vino" data-it="Frutto maturo." data-en="Ripe fruit.">Frutto maturo.</p>
             </div>
 
         </div>
@@ -72,24 +81,32 @@
         <div class="contenuto-sul-ristorante">
 
             <div class="immagine-sul-ristorante">
-                <img src="../immagini/bottiglievino.jpg" alt="Facciata Tre Fratelli">
+                <img src="../immagini/bottiglievino.jpg" alt="Facciata Tre Fratelli" data-it-alt="Facciata Tre Fratelli" data-en-alt="Tre Fratelli facade">
             </div>
 
             <div class="testo-sul-ristorante">
-                <h2>Il vino appare come una parte importante della cultura della regione.</h2>
-                <p>
+                <h2 data-it="Il vino appare come una parte importante della cultura della regione." data-en="Wine appears as an important part of the region's culture.">Il vino appare come una parte importante della cultura della regione.</h2>
+                <p data-it="Le cantine fanno parte della storia locale, con vigneti antichi, viti ben curate e tradizioni 
+                    mantenute per diverse generazioni.
+                    Ci sono riferimenti al processo di degustazione, in cui si osservano il colore, 
+                    l’aroma e il sapore del vino, come nel caso del vino rosé servito con formaggi, pane e olio." 
+                   data-en="The wineries are part of the local history, with ancient vineyards, well-cared vines and traditions preserved for generations. There are references to the tasting process where colour, aroma and flavour are observed, as in the case of rosé served with cheeses, bread and oil.">
                     Le cantine fanno parte della storia locale, con vigneti antichi, viti ben curate e tradizioni 
                     mantenute per diverse generazioni.
                     Ci sono riferimenti al processo di degustazione, in cui si osservano il colore, 
-                    l’aroma e il sapore del vino, come nel caso del vino rosé servito con formaggi, pane e olio. 
-                    
+                    l’aroma e il sapore del vino, come nel caso del vino rosé servito con formaggi, pane e olio.
                 </p>
-                <p>
+                <p data-it="La produzione del vino è anche legata al passato della regione, includendo momenti difficili 
+                    in cui alcune cantine rischiarono di chiudere e furono salvate grazie al lavoro di enologi 
+                    esperti e ai cambiamenti nei metodi di produzione."
+                   data-en="Wine production is also linked to the region's past, including difficult times when some wineries faced closure and were saved thanks to the work of expert winemakers and changes in production methods.">
                     La produzione del vino è anche legata al passato della regione, includendo momenti difficili 
                     in cui alcune cantine rischiarono di chiudere e furono salvate grazie al lavoro di enologi 
                     esperti e ai cambiamenti nei metodi di produzione.
                 </p>
-                <p>
+                <p data-it="La cantina rappresenta tradizione, storia e il valore culturale del vino nella 
+                    regione, preservando sapori e memorie nel corso degli anni."
+                   data-en="The winery represents tradition, history and the cultural value of wine in the region, preserving flavours and memories over the years.">
                     La cantina rappresenta tradizione, storia e il valore culturale del vino nella 
                     regione, preservando sapori e memorie nel corso degli anni.
                 </p>
@@ -103,13 +120,20 @@
         <div class="contenuto-sul-ristorante">
 
             <div class="testo-sul-ristorante">
-                <h2>L’innovazione del vino senza alcol.</h2>
-                <p>
+                <h2 data-it="L’innovazione del vino senza alcol." data-en="The innovation of alcohol-free wine.">L’innovazione del vino senza alcol.</h2>
+                <p data-it="Alessandro, pronipote di Giovanni, grazie alla sua vasta conoscenza in enologia a Milano, 
+                    riuscì a sviluppare prototipi di vini senza alcol, con un processo identico a quello del 
+                    vino tradizionale, ma con la rimozione dell’alcol senza perdere aromi né struttura." 
+                   data-en="Alessandro, Giovanni's great-grandson, thanks to his extensive oenology knowledge in Milan, managed to develop prototypes of alcohol-free wines, using a process identical to traditional wine but removing the alcohol without losing aroma or structure.">
                     Alessandro, pronipote di Giovanni, grazie alla sua vasta conoscenza in enologia a Milano, 
                     riuscì a sviluppare prototipi di vini senza alcol, con un processo identico a quello del 
-                    vino tradizionale, ma con la rimozione dell’alcol senza perdere aromi né struttura. 
+                    vino tradizionale, ma con la rimozione dell’alcol senza perdere aromi né struttura.
                 </p>
-                <p>
+                <p data-it="L’innovazione del vino senza alcol rappresenta uno dei capitoli più sorprendenti e affascinanti 
+                    della storia recente della Cantina Tre Fratelli. Dopo quasi un secolo di tradizione vinicola, 
+                    Alessandro — pronipote di Giovanni e quarta generazione della famiglia Ferraro — decise che era 
+                    arrivato il momento di unire passato e futuro in qualcosa che nessuno, prima di lui, aveva osato immaginare."
+                   data-en="The innovation of alcohol-free wine represents one of the most surprising and fascinating chapters in the recent history of the Tre Fratelli Winery. After almost a century of winemaking tradition, Alessandro — Giovanni's great-grandson and fourth generation of the Ferraro family — decided it was time to join past and future in something no one before him had dared to imagine.">
                     L’innovazione del vino senza alcol rappresenta uno dei capitoli più sorprendenti e affascinanti 
                     della storia recente della Cantina Tre Fratelli. Dopo quasi un secolo di tradizione vinicola, 
                     Alessandro — pronipote di Giovanni e quarta generazione della famiglia Ferraro — decise che era 
@@ -119,32 +143,32 @@
             </div>
 
             <div class="immagine-sul-ristorante">
-                <img src="../immagini/vinosenza.png" alt="Immagine del ristorante">
+                <img src="../immagini/vinosenza.png" alt="Immagine del ristorante" data-it-alt="Immagine del ristorante" data-en-alt="Image of the restaurant">
             </div>
 
         </div>
-    </section>
+    </section><br><br>
 
     <footer class="footer">
         <div class="footer-container">
 
             <div class="colonna">
-                <h3>TreFratelli</h3>
-                <p>Via S. Stefano, 55 — 28087 Tirano (SO), Italia</p>
-                <p>+39 000 000 000</p>
+                <h3 data-it="TreFratelli" data-en="TreFratelli">TreFratelli</h3>
+                <p data-it="Via S. Stefano, 55 — 28087 Tirano (SO), Italia" data-en="Via S. Stefano, 55 — 28087 Tirano (SO), Italy">Via S. Stefano, 55 — 28087 Tirano (SO), Italia</p>
+                <p data-it="+39 000 000 000" data-en="+39 000 000 000">+39 000 000 000</p>
             </div>
 
             <div class="colonna">
-                <h3>MAGGIORI INFORMAZIONI</h3>
-                <p>Email: info@trefratelli.example</p>
-                <p>Contati: info@trefratelli.example</p>
-                <p>Telefono: +39 000 000 000</p>
+                <h3 data-it="MAGGIORI INFORMAZIONI" data-en="MORE INFORMATION">MAGGIORI INFORMAZIONI</h3>
+                <p data-it="Email: info@trefratelli.example" data-en="Email: info@trefratelli.example">Email: info@trefratelli.example</p>
+                <p data-it="Contati: info@trefratelli.example" data-en="Contact: info@trefratelli.example">Contati: info@trefratelli.example</p>
+                <p data-it="Telefono: +39 000 000 000" data-en="Phone: +39 000 000 000">Telefono: +39 000 000 000</p>
             </div>
 
         </div>
 
         <div class="footer-bottom">
-            <p>© 2025 Cantina e Ristorante Tre Fratelli · Sito dimostrativo non commerciale.</p>
+            <p data-it="© 2025 Cantina e Ristorante Tre Fratelli · Sito dimostrativo non commerciale." data-en="© 2025 Cantina e Ristorante Tre Fratelli · Demonstrative non-commercial site.">© 2025 Cantina e Ristorante Tre Fratelli · Sito dimostrativo non commerciale.</p>
         </div>
     </footer>
 
@@ -152,10 +176,87 @@
     <script>
         const toggle = document.getElementById("menu-toggle");
         const menu = document.querySelector(".menu-navegacao ul");
+        if (toggle && menu) {
+            toggle.addEventListener("click", () => {
+                menu.classList.toggle("ativo");
+            });
+        }
 
-        toggle.addEventListener("click", () => {
-            menu.classList.toggle("ativo");
-        });
+        (function() {
+            const dropdown = document.querySelector('.dropdown-idioma');
+            if (!dropdown) return;
+            const btn = dropdown.querySelector('.dropdown-btn');
+            const conteudo = dropdown.querySelector('.dropdown-conteudo');
+
+            function closeAll() {
+                document.querySelectorAll('.dropdown-conteudo').forEach(el => {
+                    el.style.display = 'none';
+                    el.parentElement && el.parentElement.setAttribute('aria-expanded', 'false');
+                    el.setAttribute('aria-hidden', 'true');
+                });
+            }
+
+            btn.addEventListener('click', (e) => {
+                const isOpen = conteudo.style.display === 'block';
+                closeAll();
+                if (!isOpen) {
+                    conteudo.style.display = 'block';
+                    dropdown.setAttribute('aria-expanded', 'true');
+                    conteudo.setAttribute('aria-hidden', 'false');
+                }
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!dropdown.contains(e.target)) closeAll();
+            });
+
+            dropdown.querySelectorAll('.idioma').forEach(item => {
+                item.addEventListener('click', () => {
+                    const lang = item.getAttribute('data-lang') || 'it';
+                    setLanguage(lang);
+                    closeAll();
+                });
+            });
+        })();
+
+        function setLanguage(lang) {
+            try { document.documentElement.lang = (lang === 'it') ? 'it' : 'en'; } catch (e) {}
+
+            const titleEl = document.querySelector('title');
+            if (titleEl && titleEl.getAttribute('data-' + lang)) {
+                titleEl.textContent = titleEl.getAttribute('data-' + lang);
+            }
+
+            const all = document.querySelectorAll('[data-it], [data-en], [data-it-html], [data-en-html]');
+            all.forEach(el => {
+                const htmlAttr = el.getAttribute('data-' + lang + '-html');
+                if (htmlAttr !== null) {
+                    el.innerHTML = htmlAttr;
+                    return;
+                }
+                const textAttr = el.getAttribute('data-' + lang);
+                if (textAttr !== null) {
+                    el.textContent = textAttr;
+                    return;
+                }
+            });
+
+            document.querySelectorAll('img[data-it-alt], img[data-en-alt]').forEach(img => {
+                const alt = img.getAttribute('data-' + lang + '-alt');
+                if (alt !== null) img.alt = alt;
+            });
+
+            try { localStorage.setItem('trefratelli_lang', lang); } catch(e) {}
+        }
+
+        (function() {
+            let saved = null;
+            try { saved = localStorage.getItem('trefratelli_lang'); } catch(e) { saved = null; }
+            if (saved === 'en' || saved === 'it') {
+                setLanguage(saved);
+            }
+        })();
+
     </script>
 
 </body>
