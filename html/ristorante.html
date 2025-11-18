@@ -13,8 +13,8 @@
         <div class="logo-area">
             <img src="../immagini/vinologo.png" alt="Logo Tre Fratelli">
             <div class="logo-textos">
-                <h1>Tre Fratelli</h1>
-                <p>CANTINA E RISTORANTE</p>
+                <h1 data-it="Tre Fratelli" data-en="Tre Fratelli">Tre Fratelli</h1>
+                <p data-it="CANTINA E RISTORANTE" data-en="WINERY & RESTAURANT">CANTINA E RISTORANTE</p>
             </div>
         </div>
 
@@ -22,11 +22,19 @@
         
         <nav class="menu-navegacao" id="menu">
             <ul>
-                <li><a href="index.html"><strong>Principale</strong></a></li>
-                <li><a href="cantina.html"><strong>Cantina</strong></a></li>
-                <li class="ativo"><a href="ristorante.html"><strong>Ristorante</strong></a></li>
-                <li><a href="chisiamo.html"><strong>Chi Siamo</strong></a></li>
-                <li class="cta-button"><a href="prenotazione.html">Prenotare Tavoli</a></li>
+                <li><a href="index.html" data-it="Principale" data-en="Home"><strong>Principale</strong></a></li>
+                <li><a href="cantina.html" data-it="Cantina" data-en="Winery"><strong>Cantina</strong></a></li>
+                <li class="ativo"><a href="ristorante.html" data-it="Ristorante" data-en="Restaurant"><strong>Ristorante</strong></a></li>
+                <li><a href="chisiamo.html" data-it="Chi Siamo" data-en="About Us"><strong>Chi Siamo</strong></a></li>
+                <li class="cta-button"><a href="prenotazione.html" data-it="Prenotare Tavoli" data-en="Reserve Tables">Prenotare Tavoli</a></li>
+
+                <li class="dropdown-idioma" aria-haspopup="true" aria-expanded="false">
+                    <button class="dropdown-btn" aria-controls="dropdown-idioma-menu" aria-haspopup="true" type="button" data-it="Idioma ▼" data-en="Language ▼">Idioma ▼</button>
+                    <div class="dropdown-conteudo" id="dropdown-idioma-menu" role="menu" aria-hidden="true">
+                        <p class="idioma" data-lang="it" role="menuitem">Italiano</p>
+                        <p class="idioma" data-lang="en" role="menuitem">English</p>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
@@ -34,8 +42,8 @@
     <section class="hero">
         <img src="../immagini/cibo.png" alt="Imagem do restaurante">
         <div class="hero-texto">
-            <h1>Ristorante.</h1>
-            <p>I nostri menu e le nostre tradizioni.</p>
+            <h1 data-it="Ristorante." data-en="Restaurant.">Ristorante.</h1>
+            <p data-it="I nostri menu e le nostre tradizioni." data-en="Our menus and our traditions.">I nostri menu e le nostre tradizioni.</p>
         </div>
     </section><br>
 
@@ -43,13 +51,35 @@
         <div class="contenuto-sul-ristorante">
 
             <div class="testo-sul-ristorante">
-                <h2>Il ristorante ha la capacità di realizzare sogni.</h2>
-                <p>
+                <h2 data-it="Il ristorante ha la capacità di realizzare sogni." data-en="The restaurant has the ability to make dreams come true.">
+                    Il ristorante ha la capacità di realizzare sogni.
+                </h2>
+
+                <p data-it="
+                    Il ristorante dispone di tre sale private, ognuna con una capacità di quindici persone;
+                    i tavoli hanno una forma a “U”, in modo che tutti possano ammirare la vista della 
+                    valle e delle montagne alpine presenti nella regione.
+                "
+                data-en="
+                    The restaurant has three private rooms, each with a capacity of fifteen people;
+                    the tables are arranged in a 'U' shape so that everyone can enjoy the view of the
+                    valley and the Alpine mountains in the region.
+                ">
                     Il ristorante dispone di tre sale private, ognuna con una capacità di quindici persone;
                     i tavoli hanno una forma a “U”, in modo che tutti possano ammirare la vista della 
                     valle e delle montagne alpine presenti nella regione.
                 </p><br><br>
-                <p>
+
+                <p data-it="
+                    Prima del pranzo, ci sarà una degustazione di vini, pane, oli, formaggi e aceto, condotta da un sommelier;
+                    dopo la degustazione, ogni cliente potrà scegliere il vino che accompagnerà il pranzo. Tra i nostri tre 
+                    piatti principali abbiamo:
+                "
+                data-en="
+                    Before lunch, there will be a tasting of wine, bread, oils, cheese, and vinegar, led by a sommelier;
+                    after the tasting, each customer will choose the wine that will accompany their meal. Among our three
+                    main dishes we have:
+                ">
                     Prima del pranzo, ci sarà una degustazione di vini, pane, oli, formaggi e aceto, condotta da un sommelier;
                     dopo la degustazione, ogni cliente potrà scegliere il vino che accompagnerà il pranzo. Tra i nostri tre 
                     piatti principali abbiamo:
@@ -63,21 +93,37 @@
 
             <div class="card-cibo">
                 <img src="../immagini/cibo1.png" alt="Vino 1">
-                <h3 class="nome-cibo">Spaghetti al Pomodoro</h3>
-                <p class="info-cibo">Fresco, leggero e classico, con pomodoro e basilico.</p>
+                <h3 class="nome-cibo" data-it="Spaghetti al Pomodoro" data-en="Spaghetti with Tomato Sauce">
+                    Spaghetti al Pomodoro
+                </h3>
+                <p class="info-cibo" data-it="Fresco, leggero e classico, con pomodoro e basilico."
+                   data-en="Fresh, light and classic, with tomato and basil.">
+                    Fresco, leggero e classico, con pomodoro e basilico.
+                </p>
             </div>
 
             <div class="card-cibo">
                 <img src="../immagini/cibo2.png" alt="Vino 2">
-                <h3 class="nome-cibo">Spaghetti al Ragù</h3>
-                <p class="info-cibo">Sapore intenso, ragù di carne cotto lentamente.</p>
+                <h3 class="nome-cibo" data-it="Spaghetti al Ragù" data-en="Spaghetti with Ragù">
+                    Spaghetti al Ragù
+                </h3>
+                <p class="info-cibo" data-it="Sapore intenso, ragù di carne cotto lentamente."
+                   data-en="Intense flavor, meat ragù slowly cooked.">
+                    Sapore intenso, ragù di carne cotto lentamente.
+                </p>
             </div>
 
             <div class="card-cibo">
                 <img src="../immagini/cibo3.png" alt="Vino 3">
-                <h3 class="nome-cibo">Spaghetti Aglio e Olio</h3>
-                <p class="info-cibo">Semplice, aromatico e deciso, con aglio e olio.</p>
+                <h3 class="nome-cibo" data-it="Spaghetti Aglio e Olio" data-en="Spaghetti with Garlic and Oil">
+                    Spaghetti Aglio e Olio
+                </h3>
+                <p class="info-cibo" data-it="Semplice, aromatico e deciso, con aglio e olio."
+                   data-en="Simple, aromatic and strong, with garlic and oil.">
+                    Semplice, aromatico e deciso, con aglio e olio.
+                </p>
             </div>
+
         </div>
     </section>
 
@@ -85,13 +131,32 @@
         <div class="contenuto-sul-ristorante">
 
             <div class="testo-sul-ristorante">
-                <h2>Il cibo per il Tre Fratelli.</h2>
-                <p>
+                <h2 data-it="Il cibo per il Tre Fratelli." data-en="The food of Tre Fratelli.">
+                    Il cibo per il Tre Fratelli.
+                </h2>
+
+                <p data-it="
                     Con mani ferme e sguardo sereno, preparava pasta artigianale ogni giorno, seguendo ricette 
                     tramandate da sua madre e sua nonna — ricette che hanno superato il tempo, la guerra e le crisi.
-
+                "
+                data-en="
+                    With steady hands and a calm gaze, she prepared handmade pasta every day, following recipes
+                    passed down from her mother and grandmother — recipes that survived time, war and hardship.
+                ">
+                    Con mani ferme e sguardo sereno, preparava pasta artigianale ogni giorno, seguendo ricette 
+                    tramandate da sua madre e sua nonna — ricette che hanno superato il tempo, la guerra e le crisi.
                 </p>
-                <p>
+
+                <p data-it="
+                    Si diceva che nessuno nella regione mescolasse il pomodoro come lei: con pazienza, rispetto e un tocco di poesia.
+                    La cucina di Teresa era il cuore pulsante della famiglia, e ogni piatto servito portava con sé 
+                    ricordi di celebrazioni, raccolti e storie raccontate attorno al tavolo.
+                "
+                data-en="
+                    It was said that no one in the region mixed tomatoes like she did: with patience, respect and a touch of poetry.
+                    Teresa's kitchen was the beating heart of the family, and every dish served carried memories of celebrations,
+                    harvests and stories told around the table.
+                ">
                     Si diceva che nessuno nella regione mescolasse il pomodoro come lei: con pazienza, rispetto e un tocco di poesia.
                     La cucina di Teresa era il cuore pulsante della famiglia, e ogni piatto servito portava con sé 
                     ricordi di celebrazioni, raccolti e storie raccontate attorno al tavolo.
@@ -110,34 +175,128 @@
         <div class="footer-container">
 
             <div class="colonna">
-                <h3>TreFratelli</h3>
-                <p>Via S. Stefano, 55 — 28087 Tirano (SO), Italia</p>
-                <p>+39 000 000 000</p>
+                <h3 data-it="TreFratelli" data-en="TreFratelli">TreFratelli</h3>
+                <p data-it="Via S. Stefano, 55 — 28087 Tirano (SO), Italia"
+                   data-en="Via S. Stefano, 55 — 28087 Tirano (SO), Italy">
+                   Via S. Stefano, 55 — 28087 Tirano (SO), Italia
+                </p>
+                <p data-it="+39 000 000 000" data-en="+39 000 000 000">+39 000 000 000</p>
             </div>
 
             <div class="colonna">
-                <h3>MAGGIORI INFORMAZIONI</h3>
-                <p>Email: info@trefratelli.example</p>
-                <p>Contati: info@trefratelli.example</p>
-                <p>Telefono: +39 000 000 000</p>
+                <h3 data-it="MAGGIORI INFORMAZIONI" data-en="MORE INFORMATION">MAGGIORI INFORMAZIONI</h3>
+                <p data-it="Email: info@trefratelli.example" data-en="Email: info@trefratelli.example">
+                    Email: info@trefratelli.example
+                </p>
+                <p data-it="Contati: info@trefratelli.example" data-en="Contact: info@trefratelli.example">
+                    Contati: info@trefratelli.example
+                </p>
+                <p data-it="Telefono: +39 000 000 000" data-en="Phone: +39 000 000 000">
+                    Telefono: +39 000 000 000
+                </p>
             </div>
 
         </div>
 
         <div class="footer-bottom">
-            <p>© 2025 Cantina e Ristorante Tre Fratelli · Sito dimostrativo non commerciale.</p>
+            <p data-it="© 2025 Cantina e Ristorante Tre Fratelli · Sito dimostrativo non commerciale."
+               data-en="© 2025 Cantina e Ristorante Tre Fratelli · Non-commercial demonstration site.">
+                © 2025 Cantina e Ristorante Tre Fratelli · Sito dimostrativo non commerciale.
+            </p>
         </div>
     </footer>
-
 
     <script>
         const toggle = document.getElementById("menu-toggle");
         const menu = document.querySelector(".menu-navegacao ul");
 
-        toggle.addEventListener("click", () => {
-            menu.classList.toggle("ativo");
-        });
-    </script>
+        if (toggle && menu) {
+            toggle.addEventListener("click", () => {
+                menu.classList.toggle("ativo");
+            });
+        }
 
+        (function() {
+            const dropdown = document.querySelector('.dropdown-idioma');
+            const btn = dropdown ? dropdown.querySelector('.dropdown-btn') : null;
+            const conteudo = dropdown ? dropdown.querySelector('.dropdown-conteudo') : null;
+
+            if (!dropdown || !btn || !conteudo) return;
+
+            btn.addEventListener('click', (e) => {
+                const isOpen = conteudo.style.display === 'block';
+                closeAllLanguageDropdowns();
+                if (!isOpen) {
+                    conteudo.style.display = 'block';
+                    dropdown.setAttribute('aria-expanded', 'true');
+                    conteudo.setAttribute('aria-hidden', 'false');
+                }
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!dropdown.contains(e.target)) {
+                    closeAllLanguageDropdowns();
+                }
+            });
+
+            function closeAllLanguageDropdowns() {
+                document.querySelectorAll('.dropdown-conteudo').forEach(el => {
+                    el.style.display = 'none';
+                    el.parentElement && el.parentElement.setAttribute('aria-expanded', 'false');
+                    el.setAttribute('aria-hidden', 'true');
+                });
+            }
+
+            document.querySelectorAll('.dropdown-idioma .idioma').forEach(item => {
+                item.addEventListener('click', () => {
+                    const lang = item.getAttribute('data-lang') || 'it';
+                    setLanguage(lang);
+                    closeAllLanguageDropdowns();
+                });
+            });
+        })();
+
+        function setLanguage(lang) {
+            try { document.documentElement.lang = (lang === 'it') ? 'it' : 'en'; } catch(e) {}
+
+            const titleEl = document.querySelector('title');
+            if (titleEl && titleEl.getAttribute('data-' + lang)) {
+                titleEl.textContent = titleEl.getAttribute('data-' + lang);
+            }
+
+            const all = document.querySelectorAll('[data-it], [data-en], [data-it-html], [data-en-html]');
+            all.forEach(el => {
+                const attrHtml = el.getAttribute('data-' + lang + '-html');
+                if (attrHtml !== null) {
+                    el.innerHTML = attrHtml;
+                    return;
+                }
+
+                const attrText = el.getAttribute('data-' + lang);
+                if (attrText !== null) {
+                    el.textContent = attrText;
+                    return;
+                }
+
+            });
+
+            document.querySelectorAll('img[data-it-alt], img[data-en-alt]').forEach(img => {
+                const alt = img.getAttribute('data-' + lang + '-alt');
+                if (alt !== null) img.alt = alt;
+            });
+
+            try { localStorage.setItem('trefratelli_lang', lang); } catch(e) {}
+        }
+
+        (function() {
+            let saved = null;
+            try { saved = localStorage.getItem('trefratelli_lang'); } catch(e) { saved = null; }
+            if (saved === 'en' || saved === 'it') {
+                setLanguage(saved);
+            }
+        })();
+
+    </script>
+    
 </body>
 </html>
