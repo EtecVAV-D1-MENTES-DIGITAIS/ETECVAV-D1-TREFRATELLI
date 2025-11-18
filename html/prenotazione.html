@@ -10,69 +10,102 @@
     <header class="cabecalho-trefratelli">
         
         <div class="logo-area">
-            <h1>Tre Fratelli</h1>
-            <p>CANTINA E RISTORANTE</p>
+            <h1 data-it="Tre Fratelli" data-en="Tre Fratelli">Tre Fratelli</h1>
+            <p data-it="CANTINA E RISTORANTE" data-en="WINERY & RESTAURANT">CANTINA E RISTORANTE</p>
         </div>
         
         <nav class="menu-navegacao">
             <ul>
-                <li><a href="index.html"><strong>Principale</strong></a></li>
-                <li><a href="cantina.html"><strong>Cantina</strong></a></li>
-                <li><a href="ristorante.html"><strong>Ristorante</strong></a></li>
-                <li><a href="chisiamo.html"><strong>Chi Siamo</strong></a></li>
+                <li><a href="index.html" data-it="Principale" data-en="Home"><strong>Principale</strong></a></li>
+                <li><a href="cantina.html" data-it="Cantina" data-en="Winery"><strong>Cantina</strong></a></li>
+                <li><a href="ristorante.html" data-it="Ristorante" data-en="Restaurant"><strong>Ristorante</strong></a></li>
+                <li><a href="chisiamo.html" data-it="Chi Siamo" data-en="About Us"><strong>Chi Siamo</strong></a></li>
                 
-                <li class="cta-button"><a href="prenotazione.html">Prenotare Tavoli</a></li>
+                <li class="cta-button">
+                    <a href="prenotazione.html" data-it="Prenotare Tavoli" data-en="Reserve Tables">
+                        Prenotare Tavoli
+                    </a>
+                </li>
+
+                <li class="dropdown-idioma" aria-haspopup="true" aria-expanded="false">
+                    <button class="dropdown-btn" aria-controls="dropdown-idioma-menu" aria-haspopup="true" type="button" data-it="Idioma ▼" data-en="Language ▼">Idioma ▼</button>
+                    <div class="dropdown-conteudo" id="dropdown-idioma-menu" role="menu" aria-hidden="true">
+                        <p class="idioma" data-lang="it" role="menuitem">Italiano</p>
+                        <p class="idioma" data-lang="en" role="menuitem">English</p>
+                    </div>
+                </li>
             </ul>
         </nav>
         
     </header><br><br><br>
 
     <div class="container reserva-form-container">
-        <h2>Prenota il tuo tavolo al Tre Fratelli</h2>
-        <p class="reserva-instrucao">Inserisci i dettagli della tua prenotazione. Dopo la conferma, riceverai un'email di notifica.</p>
+        <h2 data-it="Prenota il tuo tavolo al Tre Fratelli" 
+            data-en="Book your table at Tre Fratelli">
+            Prenota il tuo tavolo al Tre Fratelli
+        </h2>
+
+        <p class="reserva-instrucao" 
+           data-it="Inserisci i dettagli della tua prenotazione. Dopo la conferma, riceverai un'email di notifica."
+           data-en="Enter your reservation details. After confirmation, you will receive a notification email.">
+           Inserisci i dettagli della tua prenotazione. Dopo la conferma, riceverai un'email di notifica.
+        </p>
 
         <form action="/submit-reserva" method="POST" class="reserva-form">
             
             <div class="form-group-flex">
                 <div class="form-group">
-                    <label for="data-reserva">Data:</label>
+                    <label for="data-reserva" data-it="Data:" data-en="Date:">Data:</label>
                     <input type="date" id="data-reserva" name="data" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="hora-reserva">Tempo:</label>
+                    <label for="hora-reserva" data-it="Tempo:" data-en="Time:">Tempo:</label>
                     <input type="time" id="hora-reserva" name="hora" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="pessoas">Nº di persone:</label>
+                    <label for="pessoas" data-it="Nº di persone:" data-en="Number of people:">Nº di persone:</label>
                     <input type="number" id="pessoas" name="pessoas" min="1" max="12" value="2" required>
                 </div>
             </div>
 
             <div class="form-group-full">
-                <label for="nome">Nome e cognome</label>
-                <input type="text" id="nome" name="nome" required placeholder="Tuo nome">
+                <label for="nome" data-it="Nome e cognome" data-en="Full Name">Nome e cognome</label>
+                <input type="text" id="nome" name="nome" required placeholder="Tuo nome" 
+                       data-en-placeholder="Your name">
             </div>
 
             <div class="form-group-flex">
                 <div class="form-group">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required placeholder="tuonome@email.com">
+                    <label for="email" data-it="E-mail:" data-en="Email:">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="tuonome@email.com"
+                           data-en-placeholder="yourname@email.com">
                 </div>
                 <div class="form-group">
-                    <label for="telefone">Telefono:</label>
-                    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+                    <label for="telefone" data-it="Telefono:" data-en="Phone:">Telefono:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX"
+                           data-en-placeholder="(XX) XXXXX-XXXX">
                 </div>
             </div>
 
             <div class="form-group-full">
-                <label for="observacoes">Note/restrizioni dietetiche (facoltative):</label><br>
-                <textarea id="observacoes" name="observacoes" rows="3" placeholder="Ex: Allergia al glutine, preferenza per un posto vicino al finestrino..."></textarea>
+                <label for="observacoes" 
+                       data-it="Note/restrizioni dietetiche (facoltative):"
+                       data-en="Notes/dietary restrictions (optional):">
+                       Note/restrizioni dietetiche (facoltative):
+                </label><br>
+                <textarea id="observacoes" name="observacoes" rows="3"
+                          placeholder="Ex: Allergia al glutine..."
+                          data-en-placeholder="Ex: Gluten allergy..."></textarea>
             </div>
             
             <div class="form-group-full reserva-submit">
-                <button type="submit" class="cta-reserva-final">Conferma la prenotazione.</button>
+                <button type="submit" class="cta-reserva-final"
+                    data-it="Conferma la prenotazione."
+                    data-en="Confirm reservation.">
+                    Conferma la prenotazione.
+                </button>
             </div>
         </form>
     </div>
@@ -81,35 +114,128 @@
         <div class="footer-container">
 
             <div class="colonna">
-                <h3>TreFratelli</h3>
-                <p>Via S. Stefano, 55 — 28087 Tirano (SO), Italia</p>
-                <p>+39 000 000 000</p>
+                <h3 data-it="TreFratelli" data-en="TreFratelli">TreFratelli</h3>
+                <p data-it="Via S. Stefano, 55 — 28087 Tirano (SO), Italia"
+                   data-en="Via S. Stefano, 55 — 28087 Tirano (SO), Italy">
+                   Via S. Stefano, 55 — 28087 Tirano (SO), Italia
+                </p>
+                <p data-it="+39 000 000 000" data-en="+39 000 000 000">+39 000 000 000</p>
             </div>
 
             <div class="colonna">
-                <h3>MAGGIORI INFORMAZIONI</h3>
-                <p>Email: info@trefratelli.example</p>
-                <p>Contati: info@trefratelli.example</p>
-                <p>Telefono: +39 000 000 000</p>
+                <h3 data-it="MAGGIORI INFORMAZIONI" data-en="MORE INFORMATION">MAGGIORI INFORMAZIONI</h3>
+                <p data-it="Email: info@trefratelli.example" data-en="Email: info@trefratelli.example">
+                    Email: info@trefratelli.example
+                </p>
+                <p data-it="Contati: info@trefratelli.example" data-en="Contact: info@trefratelli.example">
+                    Contati: info@trefratelli.example
+                </p>
+                <p data-it="Telefono: +39 000 000 000" data-en="Phone: +39 000 000 000">
+                    Telefono: +39 000 000 000
+                </p>
             </div>
 
         </div>
 
         <div class="footer-bottom">
-            <p>© 2025 Cantina e Ristorante Tre Fratelli · Sito dimostrativo non commerciale.</p>
+            <p data-it="© 2025 Cantina e Ristorante Tre Fratelli · Sito dimostrativo non commerciale."
+               data-en="© 2025 Cantina e Ristorante Tre Fratelli · Non-commercial demonstration site.">
+                © 2025 Cantina e Ristorante Tre Fratelli · Sito dimostrativo non commerciale.
+            </p>
         </div>
     </footer>
-
 
     <script>
         const toggle = document.getElementById("menu-toggle");
         const menu = document.querySelector(".menu-navegacao ul");
 
-        toggle.addEventListener("click", () => {
-            menu.classList.toggle("ativo");
-        });
-    </script>
+        if (toggle && menu) {
+            toggle.addEventListener("click", () => {
+                menu.classList.toggle("ativo");
+            });
+        }
 
+        (function() {
+            const dropdown = document.querySelector('.dropdown-idioma');
+            const btn = dropdown ? dropdown.querySelector('.dropdown-btn') : null;
+            const conteudo = dropdown ? dropdown.querySelector('.dropdown-conteudo') : null;
+
+            if (!dropdown || !btn || !conteudo) return;
+
+            btn.addEventListener('click', (e) => {
+                const isOpen = conteudo.style.display === 'block';
+                closeAllLanguageDropdowns();
+                if (!isOpen) {
+                    conteudo.style.display = 'block';
+                    dropdown.setAttribute('aria-expanded', 'true');
+                    conteudo.setAttribute('aria-hidden', 'false');
+                }
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!dropdown.contains(e.target)) {
+                    closeAllLanguageDropdowns();
+                }
+            });
+
+            function closeAllLanguageDropdowns() {
+                document.querySelectorAll('.dropdown-conteudo').forEach(el => {
+                    el.style.display = 'none';
+                    el.parentElement && el.parentElement.setAttribute('aria-expanded', 'false');
+                    el.setAttribute('aria-hidden', 'true');
+                });
+            }
+
+            document.querySelectorAll('.dropdown-idioma .idioma').forEach(item => {
+                item.addEventListener('click', () => {
+                    const lang = item.getAttribute('data-lang') || 'it';
+                    setLanguage(lang);
+                    closeAllLanguageDropdowns();
+                });
+            });
+        })();
+
+        function setLanguage(lang) {
+            try { document.documentElement.lang = (lang === 'it') ? 'it' : 'en'; } catch(e) {}
+
+            const titleEl = document.querySelector('title');
+            if (titleEl && titleEl.getAttribute('data-' + lang)) {
+                titleEl.textContent = titleEl.getAttribute('data-' + lang);
+            }
+
+            const all = document.querySelectorAll('[data-it], [data-en], [data-it-html], [data-en-html]');
+            all.forEach(el => {
+                const attrHtml = el.getAttribute('data-' + lang + '-html');
+                if (attrHtml !== null) {
+                    el.innerHTML = attrHtml;
+                    return;
+                }
+
+                const attrText = el.getAttribute('data-' + lang);
+                if (attrText !== null) {
+                    el.textContent = attrText;
+                    return;
+                }
+
+            });
+
+            document.querySelectorAll('img[data-it-alt], img[data-en-alt]').forEach(img => {
+                const alt = img.getAttribute('data-' + lang + '-alt');
+                if (alt !== null) img.alt = alt;
+            });
+
+            try { localStorage.setItem('trefratelli_lang', lang); } catch(e) {}
+        }
+
+        (function() {
+            let saved = null;
+            try { saved = localStorage.getItem('trefratelli_lang'); } catch(e) { saved = null; }
+            if (saved === 'en' || saved === 'it') {
+                setLanguage(saved);
+            }
+        })();
+
+    </script>
 
 </body>
 </html>
